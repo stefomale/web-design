@@ -15,23 +15,34 @@ body {
 
 
 .paragraph {	
-	background: rgba(0, 0, 0, 0.8);
+
 	border-radius: 15px;
 	height: 150px;
 	transition-property: height;
 	transition-duration: 0.6s;
 	overflow: hidden;
+	margin-bottom: 50px;
+}
+
+.mario {
+	background: url(mario-back.gif);
+
+}
+
+.luigi {
+	background: url(luigi-back.gif);
 }
 
 h1 {
 	font-family: museo-sans, sans-serif;
-	font-weight: 700;
+	font-weight: 900;
 	color: white;
 	padding-top: 15px;
 	padding-bottom: 10px;
 	text-align: left;
-	font-size: 100px;
-	transition-property: font-size;
+	position: relative; left: 100px; top: 25px;
+	font-size: 60px;
+	transition-property: font-size, left, top;
 	transition-duration: 0.6s;
 
 }
@@ -42,7 +53,7 @@ p {
 	text-align: justify;
 	hyphens: auto;
 	font-family: museo-sans, sans-serif;
-	font-weight: 500;
+	font-weight: 700;
 	color: white;
 	opacity: 0;
 	transition-property: opacity;
@@ -115,6 +126,10 @@ img {
 	left: 25px;
 }
 
+.luigi img {
+	width: 25%;
+}
+
 .paragraph:hover {
 	height: 295px;
 	
@@ -128,6 +143,8 @@ img {
 
 .paragraph:hover h1{
 	font-size: 2em;
+	left: 0px;
+	top: 0px;
 	
 }
 
