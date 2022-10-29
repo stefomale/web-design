@@ -156,15 +156,9 @@ img {
 	
 }
 
-.mario:hover img{
+.paragraph:hover img{
 	width: 18%;
 	left: 0px;
 	padding: 30px 25px 80px 30px;
 	
 }
-
-.luigi:hover img{
-	width: 19%;
-	left: 0px;
-	padding: 30px 25px 80px 20px;
-
