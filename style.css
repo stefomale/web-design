@@ -1,0 +1,139 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	/*
+	background: rgb(0, 86, 182);
+	*/
+	box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
+	background: url(thumb-1920-860645.png);
+	background-size: contain;
+	background-position: bottom;
+}
+
+.paragraph {	
+	background: rgba(0, 0, 0, 0.8);
+	border-radius: 15px;
+	height: 150px;
+	transition-property: height;
+	transition-duration: 0.6s;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: museo-sans, sans-serif;
+	font-weight: 700;
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	text-align: left;
+	font-size: 100px;
+	transition-property: font-size;
+	transition-duration: 0.6s;
+
+}
+
+p {
+	padding: 20px;
+	padding-top: 0px;
+	text-align: justify;
+	hyphens: auto;
+	font-family: museo-sans, sans-serif;
+	font-weight: 500;
+	color: white;
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 0.6s;
+}
+
+div.menu {
+	font-family: museo-sans, sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+}
+
+div.back {
+	background: url(super-mario-bros-brick-rug-pattern-texture-wall-transparent-png-1205198.png);
+	background-position: top;
+	background-size: 300px;
+	box-sizing: content-box; height: 148px;
+	box-shadow: 0px 3px 4px 3px rgb(0, 0, 0);
+	text-align: center;
+}
+
+div.nav {
+	padding: 38px;	
+	max-width: 860px;
+	margin: 0 auto;
+}
+
+div.nav-2 {
+	padding-bottom: 60px;
+}
+
+div.pad {
+	display: inline;
+	padding: 20px;
+}
+
+a {
+	display: inline-block;
+	box-sizing: inherit;
+}
+
+button {
+	background: url(bottone-nav.jpg) ;
+	background-size: 230px 69px;
+	border: none;
+	border-radius: 12px;
+	box-sizing: content-box; width: 229px; height: 68px;
+	box-shadow: 0px 0px 5px 4px rgba(0, 0, 0, 100%);
+	cursor: pointer;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+.button:active {
+	transform: scale(0.95);
+	box-shadow: 0px 0px 8px 7.33px rgba(0, 0, 0, 100%);
+} 
+
+img {
+	float: left;
+	padding: 20px 5px 80px 20px;
+	width: 23%;
+	height: auto;
+	transition: width 0.6s, left 0.6s, padding 0.6s;
+	position: relative;
+	left: 25px;
+}
+
+.paragraph:hover {
+	height: 295px;
+	
+}
+
+.paragraph:hover p{
+	height: 400px;
+	opacity: 100;
+	
+}
+
+.paragraph:hover h1{
+	font-size: 2em;
+	
+}
+
+.paragraph:hover img{
+	width: 18%;
+	left: 0px;
+	padding: 30px 25px 80px 30px;
+	
+}
+
