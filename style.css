@@ -3,24 +3,38 @@
 	margin: 0;
 }
 
+header {
+	height: 100px;
+	width: auto;
+	background-color: rgb(0, 86, 182);
+}
+
+header img {
+	width: 15%;
+	margin: 0 auto;
+	padding-top: 5px;
+	position: relative; 
+}
+
 body {
 	/*
 	background: rgb(0, 86, 182);
 	*/
 	box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
 	background: url(thumb-1920-860645.png);
-	background-size: contain;
-	background-position: bottom;
+	background-size: 92%;
+	background-position: top;
+	background-repeat: repeat;
 	overflow: scroll;
 }
 
 
 .paragraph {	
 	border-radius: 15px;
-	height: 150px;
+	max-height: 150px;
 	overflow: hidden;
-	margin-bottom: 50px;
-	transition: height 5s;
+	margin-bottom: 30px;
+	transition: max-height 0.3s;
 
 }
 
@@ -52,7 +66,7 @@ h1 {
 	position: relative; left: 100px; top: 25px;
 	font-size: 60px;
 	transition-property: font-size, left, top;
-	transition-duration: 0.6s;
+	transition-duration: 0.8s;
 
 }
 
@@ -86,12 +100,10 @@ h1 {
 
 p {
 	text-align: justify;
-	hyphens: auto;
 	font-family: museo-sans, sans-serif;
 	transition-property: all; 
-	transition-duration: 0.6s;
+	transition-duration: 0.3s;
 	opacity: 0;
-	max-height: 0;
 }
 
 .p-main {
@@ -123,6 +135,9 @@ div.back {
 	box-sizing: content-box; height: 148px;
 	box-shadow: 0px 3px 4px 3px rgb(0, 0, 0);
 	text-align: center;
+	position: sticky;
+	top: 0;
+	z-index: 5000;
 }
 
 div.nav {
@@ -132,12 +147,19 @@ div.nav {
 }
 
 div.nav-2 {
-	padding-bottom: 60px;
+	padding-bottom: 80px;
 }
 
 div.pad {
 	display: inline;
 	padding: 20px;
+}
+
+div.characters {
+	max-width: 860;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
 
 a {
@@ -172,14 +194,14 @@ img {
 .mario img {
 	padding: 20px 5px 20px 20px;
 	width: 23%;
-	transition: width 0.6s, left 0.6s, padding 0.6s;
+	transition: width 0.8s, left 0.8s, padding 0.8s;
 	left: 25px;
 }
 
 .luigi img {
 	padding: 20px 5px 40px 20px;
 	width: 25%;
-	transition: width 0.6s, left 0.6s, padding 0.6s, top 0.6s;
+	transition: width 0.8s, left 0.8s, padding 0.8s, top 0.8s;
 	left: 25px;
 	top: 0px;
 }
@@ -187,7 +209,7 @@ img {
 .peach img {
 	padding: 10px 5px 20px 0px;
 	width: 30%;
-	transition: width 0.6s, left 0.6s, padding 0.6s, top 0.6s;
+	transition: width 0.8s, left 0.8s, padding 0.8s, top 0.8s;
 	left: -18px;
 	top: 0px;
 }	
@@ -195,18 +217,19 @@ img {
 .yoshi img {
 	padding: 10px 5px 20px 24px;
 	width: 19%;
-	transition: width 0.6s, left 0.6s, padding 0.6s, top 0.6s;
+	transition: width 0.8s, left 0.8s, padding 0.8s, top 0.8s;
 	left: 10px;
 	top: 0px;
 }	
 
 .paragraph:hover {
-	height: auto;
+	max-height: 1000px;
+	transition: max-height 0.8s;
 }
 
 .paragraph:hover p{
 	opacity: 100;
-	max-height: 800px;
+	transition: opacity 0.8s;
 }
 
 .paragraph:hover h1{
