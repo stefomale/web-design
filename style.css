@@ -14,6 +14,7 @@ header {
 header img {
 	height: 75%;
 	margin: 0 auto;
+	filter: drop-shadow(1px 1px 10px);
 
 }
 
@@ -28,6 +29,7 @@ body {
 	background-repeat: repeat;
 }
 
+/* Characters boxes*/
 
 .paragraph {	
 	border-radius: 15px;
@@ -55,6 +57,9 @@ body {
 	background: url(yoshi-back.gif);
 }
 
+.dk {
+	background: url(dk-back.gif);
+}
 
 h1 {
 	font-family: museo-sans, sans-serif;
@@ -98,6 +103,13 @@ h1 {
 	position: relative; left: 120px; top: 25px;
 }
 
+.dk h1 {
+	color: white;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	position: relative; left: 40px; top: 25px;
+}
+
 p {
 	text-align: justify;
 	font-family: museo-sans, sans-serif;
@@ -118,6 +130,8 @@ p {
 	padding: 2em 40px 1.5em 40px;
 	color: black;
 }
+
+/* Navigator */
 
 div.menu {
 	font-family: museo-sans, sans-serif;
@@ -185,6 +199,8 @@ button {
 	box-shadow: 0px 0px 8px 7.33px rgba(0, 0, 0, 100%);
 } 
 
+/* Characters img */
+
 img {
 	float: left;
 	height: auto;
@@ -219,7 +235,14 @@ img {
 	transition: width 0.8s, left 0.8s, padding 0.8s, top 0.8s;
 	left: 10px;
 	top: 0px;
-}	
+}
+
+.dk img {
+	padding: 0px 5px 20px 10px;
+	width: 30%;
+	transition: width 0.8s, left 0.8s, padding 0.8s, top 0.8s;
+	top: -10px;
+}		
 
 .paragraph:hover {
 	max-height: 1000px;
@@ -265,13 +288,30 @@ img {
 	padding: 30px 25px 20px 30px;
 }
 
+.dk:hover img{
+	width: 24%;
+	left: 0px;
+	top: 0px;
+	padding: 10px 25px 20px 30px;
+}
+
 footer {
-	height: 100px;
-	width: auto;
-	background-color: rgb(41, 40, 30);	
-	box-sizing: border-box;
-	padding: 20px 226px;
-	align-content: center;
+	height: 90px;
+	background-color: rgb(41, 40, 30);
+}
+
+.footer-logo {
+	margin: 0 auto;
+	width: 100%;
+}
+
+.footer-logo img {
+	margin: 0 auto;
+	max-width: 1300px;
+	filter:	drop-shadow(1px 1px 2px);
+	position: relative;
+	bottom: 26px;
+	left: 50px;
 }
 
 .img-bottom {
@@ -280,19 +320,18 @@ footer {
 	max-width: 860px;
 	margin: 0 auto;
 	position: relative;
-	top: 14.98px;
-	z-index: 1;
+	top: 29.98px;
+	z-index: 1;	
+
 }
 
 .img-top {
 	display: flex;
 	align-items: center;
-	visibility: hidden;	
 	max-width: 860px;
 	margin: 0 auto;
 	position: relative;
-	bottom: 14.98px;
-	z-index: 2;
+	bottom: 0px;
 }
 
 footer img {
@@ -300,6 +339,48 @@ footer img {
 	margin: 0 auto
 }
 
-#fb_1:hover + .img-top{
+.img-bottom a {
+	margin: 0 auto;
+}
+
+.img-top a {
+	margin: 0 auto;
+	z-index: 1;
+
+}
+
+#fb-on {
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.fb:hover > #fb-on {
+	visibility: visible;
+}
+
+#twitter-on {
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.twitter:hover > #twitter-on {
+	visibility: visible;
+}
+
+#ig-on {
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.ig:hover > #ig-on {
+	visibility: visible;
+}
+
+#reddit-on {
+	visibility: hidden;
+	cursor: pointer;
+}
+
+.reddit:hover > #reddit-on {
 	visibility: visible;
 }
