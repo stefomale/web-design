@@ -3,6 +3,9 @@
 	margin: 0;
 }
 
+html {
+	height: 100%;
+}
 header {
 	height: 100px;
 	width: auto;
@@ -27,6 +30,8 @@ body {
 	background-size: 92%;
 	background-position: top;
 	background-repeat: repeat;
+	overflow-y: scroll;
+	position: relative;
 }
 
 /* Characters boxes*/
@@ -156,7 +161,6 @@ div.back {
 
 div.nav {
 	padding: 38px;	
-	max-width: 860px;
 	margin: 0 auto;
 }
 
@@ -173,7 +177,7 @@ div.characters {
 	max-width: 860;
 	margin: 0 auto;
 	padding-top: 30px;
-	padding-bottom: 30px;
+	padding-bottom: 120px;
 }
 
 a {
@@ -298,6 +302,9 @@ img {
 footer {
 	height: 90px;
 	background-color: rgb(41, 40, 30);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
 }
 
 .footer-logo {
