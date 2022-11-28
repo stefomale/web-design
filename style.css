@@ -41,10 +41,11 @@ body {
 	background: rgb(0, 86, 182);
 	*/
 	box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5);
-	background: url(thumb-1920-860645.png);
+	background: url(img/thumb-1920-860645.png);
 	background-size: 92%;
-	background-position: top;
+	background-position: bottom;
 	background-repeat: repeat;
+	background-attachment: fixed;
 	overflow-y: scroll;
 	position: relative;
 }
@@ -61,24 +62,24 @@ body {
 }
 
 .mario {
-	background: url(mario-back.gif);
+	background: url(img/mario-back.gif);
 
 }
 
 .luigi {
-	background: url(luigi-back.gif);
+	background: url(img/luigi-back.gif);
 }
 
 .peach {
-	background: url(peach-back.gif);
+	background: url(img/peach-back.gif);
 }
 
 .yoshi {
-	background: url(yoshi-back.gif);
+	background: url(img/yoshi-back.gif);
 }
 
 .dk {
-	background: url(dk-back.gif);
+	background: url(img/dk-back.gif);
 }
 
 h1 {
@@ -130,7 +131,7 @@ h1 {
 	position: relative; left: 40px; top: 25px;
 }
 
-p {
+.characters p {
 	text-align: justify;
 	font-family: museo-sans, sans-serif;
 	transition-property: all; 
@@ -163,7 +164,7 @@ div.menu {
 }
 
 div.back {
-	background: url(super-mario-bros-brick-rug-pattern-texture-wall-transparent-png-1205198.png);
+	background: url(img/super-mario-bros-brick-rug-pattern-texture-wall-transparent-png-1205198.png);
 	background-position: top;
 	background-size: 300px;
 	box-sizing: content-box; height: 148px;
@@ -203,7 +204,7 @@ a {
 }
 
 a button {
-	background: url(bottone-nav.jpg) ;
+	background: url(img/bottone-nav.jpg) ;
 	background-size: 230px 69px;
 	border: none;
 	border-radius: 12px;
@@ -322,6 +323,7 @@ footer {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+	z-index: 2;
 }
 
 .footer-logo {
@@ -407,4 +409,130 @@ footer img {
 
 .reddit:hover > #reddit-on {
 	visibility: visible;
+}
+
+.background-games{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.smbros{
+	background: url(img/thumb-1920-860645.png);
+	background-size: 100% auto;
+	background-position: bottom, center;
+	image-rendering: pixelated;
+}
+
+.smworld{
+	background: url(img/super-mario-world-bg.jpg);
+	background-size: 100% auto;
+	background-position: bottom, center;
+	image-rendering: pixelated;
+}
+
+.sm64{
+	background: url(img/super-mario-64-bg.jpg);
+	background-size: 100% auto;
+	background-position: top, center;
+	image-rendering: pixelated;
+}
+
+.nav-button {
+	margin-bottom: 2rem;
+}
+
+.game-button button{
+	margin: 0px 20px!important;
+}
+
+#smbros-game button{
+	background: url(img/Super_Mario_Bros._Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	border-radius: 12px;
+	height: 60px !important; 
+	width: 200px !important;
+	border: 0 !important;
+}
+
+#smworld-game button{
+	background: url(img/Super_Mario_World_game_logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	border-radius: 12px;
+	height: 79.5px !important; 
+	width: 200px !important;
+	border: 0 !important;
+}
+
+#sm64-game button{
+	background: url(img/Super_Mario_64_Logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	border: none;
+	border-radius: 12px;
+	height: 79.5px !important; 
+	width: 200px !important;
+	border: 0 !important;
+}
+
+.game-slides {
+	height: 60vh;
+}
+
+.button-bg {
+	background: rgba(0, 0, 0, 0.8);
+	height: 120px;
+	display: flex;
+	align-items: center;
+	border-radius: 20px;
+
+}
+
+.carousel-control-prev {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.carousel-control-next {
+	position: relative;
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.game p {
+	background: rgba(0, 0, 0, 0.8);
+	color: white;
+	font-family: museo-sans, sans-serif;
+	font-size: 0.9em;
+	padding: 20px;
+	position: relative;
+	top: 40px;
+	width: 70%;
+	border-radius: 20px;
+}
+
+.mario-game {
+	width: 60%;
+	height: 500px;
+	position: relative;
+	display: block;
+	margin-top: 58px;
+	border-radius: 20px;
+}
+
+.mc-container {
+	background-color: rgb(0, 86, 182) ;
+	display: flex;
+	width: 100%;
+	height: 700px;
+	align-items: center;
+	flex-direction: column;
 }

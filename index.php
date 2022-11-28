@@ -3,53 +3,18 @@
 	<title>
 		Super Mario
 	</title>
-	<link rel="shortcut icon" type="image/jpg" href="icon-mario.png">
+	<link rel="shortcut icon" type="image/jpg" href="img/icon-mario.png">
 </head>
 
 <link rel="stylesheet" href="https://use.typekit.net/wam6xnd.css">
 <link rel="stylesheet" type="text/css" href="style.css">
-<!----><link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
+<!-- --><link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap-grid.css">
 
-<header class=""><img src="Nintendo_red_logo.png"></header>
 <body>
-	<div class="back">	
-		<div class="nav">
-			<div class="pad">
-				<a href="home.html">
-					<button class="button">
-						<div class="menu">Home</div>
-					</button>
-				</a>
-			</div>
-			<div class="pad">
-				<a href="history.html">
-					<button class="button">
-						<div class="menu">History</div>
-					</button>
-				</a>
-			</div>
-			<div class="logo-nav">
-				<img src="Mario_Series_Logo.png">
-			</div>
-			<div class="pad">	
-				<a href="index.html">
-					<button class="button">
-						<div class="menu">Characters</div>	
-					</button>
-				</a>
-			</div>
-			<div class="pad">
-				<a href="games.html">
-					<button class="button">
-						<div class="menu">Games</div>
-					</button>
-				</a>
-			</div>
-		</div>
-	</div>
+	<?php include('htdocs/nav.php') ?>
 	<div class="characters">
 		<div class="paragraph mario" >
-			<img src="header-mario.png">
+			<img src="img/header-mario.png">
 			<h1>Mario</h1>
  			<p class="p-main">
  					Mario is the main playable character of many games across the Mario franchise, mainly the Super Mario series, and is the face of others, such as the Mario Kart and Mario Party series. Additionally, other branches of games Mario appears in have expanded beyond the platforming genre, such as racing games with Mario Kart, role-playing games with Paper Mario, puzzle games with Dr. Mario, and educational games with Mario Teaches Typing. Depicted as a brave and heroic Italian plumber, he is often tasked with rescuing the kidnapped Princess Peach of the Mushroom Kingdom from King Bowser and his army of henchmen.
@@ -63,7 +28,7 @@
 			</p>
 		</div>
 		<div class="paragraph luigi">
-			<img src="header-luigi.png">
+			<img src="img/header-luigi.png">
 			<h1>Luigi</h1>
 			<p class="p-main">
 					Luigi is an Italian plumber character who is Mario's younger brother. He is playable in most of the Mario games. He is the main protagonist of the Luigi series, in which he is depicted as clumsy and frightful, confronting fears in order to help. In the Luigi's Mansion series, Professor Elvin Gadd, more commonly known as E. Gadd, is a scientist character who uses his inventions to help Luigi.
@@ -76,7 +41,7 @@
 			</p>
 		</div>
 		<div class="paragraph peach">
-			<img src="header-peach.png">
+			<img src="img/header-peach.png">
 			<h1>Peach</h1>
 			<p class="p-main">
 				Princess Peach (formerly known as Princess Toadstool outside Japan), is the princess and the ruler of the Mushroom Kingdom, depicted as sweet and optimistic. She is the lead female character from the Mario series since her introduction in 1985, and is the main protagonist of Princess Toadstool's Castle Run (1990) and Super Princess Peach (2006).
@@ -89,7 +54,7 @@
 			</p>
 		</div>
 		<div class="paragraph yoshi">
-			<img src="header-yoshi.png">
+			<img src="img/header-yoshi.png">
 			<h1>Yoshi</h1>
 			<p class="p-main">
 				Yoshi is a green anthropomorphic dinosaur character. He is depicted with a long tongue that can be used to eat enemies, and can turn the enemies he eats into eggs that can be thrown. Yoshi is a rideable character for the heroes or a playable character in most of the Mario spin-offs, including his own series. In the Yoshi series, Poochy is Yoshi's helper dog, able to do things that Yoshi cannot, such as sniff out hidden items, cross over dangerous terrain, and jump over walls to give Yoshi a boost out of his wall jumps.
@@ -100,7 +65,7 @@
 			</p>
 		</div>
 		<div class="paragraph dk">
-			<img src="header-dk.png">
+			<img src="img/header-dk.png">
 			<h1>Donkey Kong</h1>
 			<p class="p-main">
 				Donkey Kong (DK) is an anthropomorphic gorilla character from the franchise with the same name, appearing in the Donkey Kong and Mario video game franchises. Donkey Kong first appears in the 1981 arcade game Donkey Kong, but the modern incarnation introduced in Donkey Kong Country is revealed to be the grandson of the original arcade version, which was later renamed Cranky Kong. He is playable in several Mario spin-off games, as a cheerful and powerful character.
@@ -113,21 +78,7 @@
 			</p>
 		</div>		
 	</div>
+	<?php include('htdocs/footer.php') ?>
 </body>
-<footer>
-	<div class="img-bottom">
-		<a class="fb"><img src="facebook-logo-off.png"></a>
-		<a class="twitter"><img src="twitter-logo-off.png"></a>
-		<a class="ig"><img src="instagram-logo-off.png"></a>
-		<a class="reddit"><img src="reddit-logo-off.png"></a>
-	</div>
-	<div class="img-top">
-		<a class="fb" href="https://www.facebook.com/" target="_blank"><img src="facebook-logo-on.png" id="fb-on"></a>
-		<a class="twitter" href="https://www.twitter.com/" target="_blank"><img src="twitter-logo-on.png" id="twitter-on"></a>
-		<a class="ig" href="https://www.instagram.com/" target="_blank"><img src="instagram-logo-on.png" id="ig-on"></a>
-		<a class="reddit" href="https://www.reddit.com/" target="_blank"><img src="reddit-logo-on.png" id="reddit-on"></a>
-	</div>
-	<div class="footer-logo"><img src="Mario_Series_Logo.png"></div>
-</footer>
 </html>
 
